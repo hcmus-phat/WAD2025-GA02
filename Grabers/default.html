@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Amazing Group - WAD GA02</title>
+    <link rel="stylesheet" href="default.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Our Group</h1>
+      <h2>Web Application Development - Group Assignment 02</h2>
+    </header>
+
+    <main>
+      <section class="group-info">
+        <h3>Group Information</h3>
+        <div class="info-card">
+          <h4>Group Name: Grabers</h4>
+          <p><strong>Course:</strong> Web Application Development</p>
+          <p><strong>Assignment:</strong> Group Assignment 02</p>
+          <p><strong>Members:</strong></p>
+          <ul class="member-list">
+            <li>Nguyễn Đức Phát - Student ID: 23120317</li>
+            <li>Phạm An Ninh - Student ID: 23120314</li>
+            <li>Nguyễn Nhật Duy - Student ID: 23120244</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="group-photo">
+        <h3>Click on a member's face to view their profile</h3>
+        <div class="image-container">
+          <img src="./images/group_image.jpg" usemap="#team-map" class="group-image" alt="Group Photo" />
+          <map name="team-map">
+            <area shape="circle" coords="137,422,50" href="phat.html" alt="Nguyễn Đức Phát" title="Click to view Phát's profile" />
+            <area shape="circle" coords="382,467,50" href="ninh.html" alt="Phạm An Ninh" title="Click to view Ninh's profile" />
+            <area shape="circle" coords="598,416,50" href="duy.html" alt="Nguyễn Nhật Duy" title="Click to view Duy's profile" />
+          </map>
+        </div>
+        <p class="instruction">Hover over the image to see clickable areas</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 WAD GA02 Team. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
