@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Meet the Grabers team - WAD GA02 assignment showcasing our group members and their profiles" />
+    <meta name="keywords" content="WAD, web development, team, university, assignment" />
+    <meta name="author" content="Grabers Team" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Grabers Team - WAD GA02" />
+    <meta property="og:description" content="Meet our amazing team members and explore their profiles" />
+    <meta property="og:type" content="website" />
+    
+    <title>🚀 Grabers Team - WAD GA02 | Interactive Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="./images/group_image.jpg" as="image" />
+  </head>
+  <body>
+    <header role="banner">
+      <img src="./images/logo.png" class="logo" alt="Grabers Team Logo" loading="eager" />
+      <h1>🚀 Grabers Team</h1>
+      <p>
+        <strong>Grabers</strong> - We have successfully 'deployed' from the keyboard to the
+        motorbike seat. <em>System Requirements:</em> An IT degree (used for padding the
+        helmet compartment), a reliable vehicle, and the ability to 'handle
+        exception' with all types of customers. Currently 'beta testing' on all
+        roads, aiming for <span class="highlight">'Uptime' 24/7</span>. 
+        <br><br>
+        <strong>Unemployment Status:</strong> Solved by... changing careers. 💻➡️🏍️
+      </p>
+    </header>
+
+    <main role="main">
+      <section class="group-info" aria-labelledby="members-heading">
+        <h3 id="members-heading">👥 Our Amazing Team</h3>
+        <div class="info-card-container" role="list">
+          <a href="./members/23120317/23120317.html" 
+             class="info-card" 
+             role="listitem"
+             aria-label="View Nguyễn Đức Phát's profile"
+             tabindex="0">
+            <div class="member-img-container" aria-hidden="true">
+              <img
+                src="./members/23120317/images/phat.png"
+                class="member-img"
+                alt="Portrait of Nguyễn Đức Phát"
+                loading="lazy"
+              />
+            </div>
+            <h3>🎯 Nguyễn Đức Phát</h3>
+            <p>Team Lead & Developer</p>
+          </a>
+          
+          <a href="./members/23120314/23120314.html" 
+             class="info-card"
+             role="listitem"
+             aria-label="View Phạm An Ninh's profile"
+             tabindex="0">
+            <div class="member-img-container" aria-hidden="true">
+              <img
+                src="./members/23120314/images/ninh.png"
+                class="member-img"
+                alt="Portrait of Phạm An Ninh"
+                loading="lazy"
+              />
+            </div>
+            <h3>💻 Phạm An Ninh</h3>
+            <p>Backend Specialist</p>
+          </a>
+          
+          <a href="./members/23120244/23120244.html" 
+             class="info-card"
+             role="listitem"
+             aria-label="View Nguyễn Nhật Duy's profile"
+             tabindex="0">
+            <div class="member-img-container" aria-hidden="true">
+              <img 
+                src="./members/23120244/images/duy.png" 
+                class="member-img"
+                alt="Portrait of Nguyễn Nhật Duy"
+                loading="lazy"
+              />
+            </div>
+            <h3>🎨 Nguyễn Nhật Duy</h3>
+            <p>Frontend Designer</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="group-photo" aria-labelledby="group-photo-heading">
+        <h3 id="group-photo-heading">📸 Interactive Team Photo</h3>
+        <p class="instruction">✨ Click on any team member's face to explore their profile!</p>
+        
+        <div class="image-container" role="img" aria-label="Interactive group photo with clickable member profiles">
+          <img
+            src="./images/group_image.jpg"
+            usemap="#team-map"
+            class="group-image"
+            alt="Grabers team photo showing three smiling members giving thumbs up"
+            loading="lazy"
+          />
+          <map name="team-map">
+            <area
+              shape="circle"
+              coords="137,422,50"
+              href="./members/23120317/23120317.html"
+              alt="Nguyễn Đức Phát - Team Lead"
+              title="🎯 Click to view Phát's detailed profile and experience"
+              tabindex="0"
+            />
+            <area
+              shape="circle"
+              coords="382,467,50"
+              href="./members/23120314/23120314.html"
+              alt="Phạm An Ninh - Backend Specialist"
+              title="💻 Click to view Ninh's technical expertise and projects"
+              tabindex="0"
+            />
+            <area
+              shape="circle"
+              coords="598,416,50"
+              href="./members/23120244/23120244.html"
+              alt="Nguyễn Nhật Duy - Frontend Designer"
+              title="🎨 Click to view Duy's creative work and design portfolio"
+              tabindex="0"
+            />
+          </map>
+        </div>
+        
+        <div class="photo-stats">
+          <div class="stat-item">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Team Members</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Dedication</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">∞</span>
+            <span class="stat-label">Possibilities</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <div class="footer-content">
+        <p>&copy; 2025 Grabers Team - WAD GA02. Crafted with 💜 and lots of ☕</p>
+        <p class="footer-subtitle">Building the future, one line of code at a time</p>
+      </div>
+    </footer>
+
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+  </body>
+</html>
